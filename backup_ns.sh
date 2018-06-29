@@ -1,11 +1,11 @@
 #!/bin/bash
 # Daily backup script crontab config as root
-# 00 20 * * * /home/jcramirez/backup_ns.sh 
+# 57 18 * * * /root/backup_ns.sh 
 
 # Create some needed variable
 bind_path="/etc/bind/"
-base_path="/home/jcramirez/bind_backup/"
-base_file="/home/jcramirez/bind_backup/bind_"
+base_path="/root/bind_backup/"
+base_file="/root/bind_backup/bind_"
 filename="$base_file$(date +%Y%m%d%H%M).tar.gz"
 
 # Backup Server Configuration
