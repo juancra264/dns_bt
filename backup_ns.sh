@@ -14,5 +14,5 @@ tar -zcpf $filename $bind_path
 # Remove backup files older than 30 days
 find $base_path -name *.tar.gz -type f -mtime +7 -exec rm {} \;
 
-# Copy the backups to another server (sFTP BT LATAM) 10.57.23.24 
-scp -i /home/jcramirez/.ssh/id_rsa /home/jcramirez/bind_backup/* jcramirez@ftp.btlatam.com.co:/home/jcramirez/bind_backup
+# Copy the backups to another server (sFTP BT LATAM) 10.57.23.24 user jcramirez
+scp -i /home/jcramirez/.ssh/id_rsa /root/bind_backup/* jcramirez@ftp.btlatam.com.co:/home/jcramirez/bind_backup
