@@ -62,7 +62,7 @@ echo " " >> $NAMED_CONF_PATH
 # Crea archivo de configuracion ZONA DNS del dominio 
 echo '$ORIGIN' $domainname. >> $ZONE_DB_FILE
 echo '$TTL 43200' >> $ZONE_DB_FILE
-echo "$domainname.	IN	SOA	$NS1.	$ADMIN_EMAIL.	(" >> $ZONE_DB_FILE
+echo "@			IN	SOA	$NS1.	$ADMIN_EMAIL. (" >> $ZONE_DB_FILE
 echo "			$SERIAL_NO_COUNT ; serial" >> $ZONE_DB_FILE
 echo "			10800	; refresh" >> $ZONE_DB_FILE
 echo "			3600	; retry" >> $ZONE_DB_FILE
